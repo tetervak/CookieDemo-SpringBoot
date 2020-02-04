@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- Alex Tetervak, Sheridan College, Ontario -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{css/main.css}" href="../static/css/main.css" type="text/css" rel="stylesheet">
+    <title>Output</title>
+</head>
+<body>
+<main>
+    <h1>Output</h1>
+    <h2>Hello, <span th:text="${userName}">Bart Simpson</span>!</h2>
+    <p th:text="${message}" class="message">Your name is saved in cookies.</p>
+    <p><a th:href="@{Index.do}" href="Welcome.html">Index</a></p>
+</main>
+<footer>Sheridan College, 2019</footer>
+</body>
+</html>

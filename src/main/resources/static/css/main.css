@@ -1,0 +1,81 @@
+/* The styles for the elements */
+main{
+    font-family: sans-serif;
+    padding-left: 1em;
+}
+
+h1{
+    color: #4caf50;
+    text-shadow: 2px 2px 5px #81c784;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+label {
+    color: #673ab7;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+input[type="text"]{
+    width: 10em;
+    vertical-align: baseline;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding-left: 5px;
+    font-size: 100% ;
+}
+
+input[type="submit"]{
+    margin-left: 1em;
+}
+
+footer{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+    border-top: silver solid;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    width: 18em;
+    color: lightslategrey;
+}
+
+br {
+    clear: both;
+}
+
+a{
+    color: limegreen;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p.message{
+    font-size: larger;
+    font-weight: bolder;
+    color: #ff9800;
+}
+
+footer{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+    border-top: #78909c solid;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    width: 18em;
+    color: #546e7a;
+}
+

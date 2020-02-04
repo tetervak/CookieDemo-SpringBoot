@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Alex Tetervak, Sheridan College, Ontario -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{css/main.css}" href="../static/css/main.css" type="text/css" rel="stylesheet">
+    <title>Input</title>
+</head>
+<body>
+<main>
+    <h1>Input</h1>
+    <h2>Enter your name</h2>
+    <form th:action="@{Process.do}" action="Output.html" method="get">
+        <p>
+            <label for="user">Name:</label>
+            <input type="text" name="userName" id="user">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</main>
+<footer>Sheridan College, 2019</footer>
+</body>
+</html>
