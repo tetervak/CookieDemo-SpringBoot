@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,7 +26,7 @@ public class CookieDemoController {
         this.cookieEncoder = cookieEncoder;
     }
 
-    @RequestMapping(value={"/", "/Index.do"})
+    @GetMapping(value={"/", "/Index.do"})
     public ModelAndView index(@CookieValue(value = "encName", defaultValue = "") String encName,
                                   HttpServletResponse response){
         logger.trace("index() is called");
@@ -45,7 +45,7 @@ public class CookieDemoController {
 
     }
 
-    @RequestMapping("/Process.do")
+    @GetMapping("/Process.do")
     public ModelAndView process(
             @RequestParam(defaultValue = "") String userName,
             @CookieValue(value = "test", defaultValue = "") String test,
@@ -71,7 +71,7 @@ public class CookieDemoController {
         }
     }
 
-    @RequestMapping("/Forget.do")
+    @GetMapping("/Forget.do")
     public String forget(HttpServletResponse response){
         logger.trace("forget() is called");
         Cookie cookie = new Cookie("encName","whatever");
