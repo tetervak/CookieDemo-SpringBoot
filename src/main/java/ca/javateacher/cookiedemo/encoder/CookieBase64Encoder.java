@@ -10,7 +10,7 @@ public class CookieBase64Encoder implements CookieEncoder {
     @Override
     public String decode(String value) {
         Base64.Decoder decoder  = Base64.getDecoder();
-        return new String(decode(value));
+        return new String(decoder.decode(value));
     }
 
     @Override

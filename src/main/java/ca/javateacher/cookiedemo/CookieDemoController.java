@@ -19,10 +19,10 @@ public class CookieDemoController {
 
     private final Logger logger = LoggerFactory.getLogger(CookieDemoController.class);
 
-    private CookieEncoder cookieEncoder;
+    private final CookieEncoder cookieEncoder;
 
     public CookieDemoController(
-            @Qualifier("cookieBase64Encoder") CookieEncoder cookieEncoder) {
+            @Qualifier("cookieUrlEncoder") CookieEncoder cookieEncoder) {
         this.cookieEncoder = cookieEncoder;
     }
 
