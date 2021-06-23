@@ -1,5 +1,5 @@
 // Alex Tetervak, Sheridan College, Ontario
-package ca.javateacher.cookiedemo;
+package ca.javateacher.cookiedemo.controller;
 
 import ca.javateacher.cookiedemo.encoder.CookieEncoder;
 import org.slf4j.Logger;
