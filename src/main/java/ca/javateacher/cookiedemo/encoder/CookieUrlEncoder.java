@@ -1,13 +1,10 @@
 // Alex Tetervak, Sheridan College, Ontario
 package ca.javateacher.cookiedemo.encoder;
 
-import org.springframework.stereotype.Component;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
-@Component
 public class CookieUrlEncoder implements CookieEncoder {
 
     @Override

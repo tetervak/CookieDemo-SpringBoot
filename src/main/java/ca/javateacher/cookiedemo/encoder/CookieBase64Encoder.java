@@ -1,11 +1,8 @@
 // Alex Tetervak, Sheridan College, Ontario
 package ca.javateacher.cookiedemo.encoder;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Base64;
 
-@Component
 public class CookieBase64Encoder implements CookieEncoder {
     @Override
     public String decode(String value) {
