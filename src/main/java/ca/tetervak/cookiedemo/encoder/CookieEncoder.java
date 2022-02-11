@@ -1,5 +1,5 @@
 // Alex Tetervak, Sheridan College, Ontario
-package ca.javateacher.cookiedemo.encoder;
+package ca.tetervak.cookiedemo.encoder;
 
 public interface CookieEncoder {
     String decode(String value);

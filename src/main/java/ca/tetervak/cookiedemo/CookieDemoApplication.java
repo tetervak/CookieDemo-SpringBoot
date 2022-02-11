@@ -1,5 +1,5 @@
 // Alex Tetervak, Sheridan College, Ontario
-package ca.javateacher.cookiedemo;
+package ca.tetervak.cookiedemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

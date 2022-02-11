@@ -1,7 +1,7 @@
 // Alex Tetervak, Sheridan College, Ontario
-package ca.javateacher.cookiedemo.controller;
+package ca.tetervak.cookiedemo.controller;
 
-import ca.javateacher.cookiedemo.encoder.CookieEncoder;
+import ca.tetervak.cookiedemo.encoder.CookieEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -26,7 +26,7 @@ public class CookieDemoController {
         this.cookieEncoder = cookieEncoder;
     }
 
-    @GetMapping(value={"/", "/Index.do"})
+    @GetMapping(value={"/", "/index"})
     public ModelAndView index(@CookieValue(value = "encName", defaultValue = "") String encName,
                                   HttpServletResponse response){
         logger.trace("index() is called");
@@ -45,7 +45,7 @@ public class CookieDemoController {
 
     }
 
-    @GetMapping("/Process.do")
+    @GetMapping("/process")
     public ModelAndView process(
             @RequestParam(defaultValue = "") String userName,
             @CookieValue(value = "test", defaultValue = "") String test,
@@ -71,12 +71,12 @@ public class CookieDemoController {
         }
     }
 
-    @GetMapping("/Forget.do")
+    @GetMapping("/forget")
     public String forget(HttpServletResponse response){
         logger.trace("forget() is called");
         Cookie cookie = new Cookie("encName","whatever");
         cookie.setMaxAge(0); // is set to expire immediately
         response.addCookie(cookie);
-        return "redirect:Index.do";
+        return "redirect:index";
     }
 }
