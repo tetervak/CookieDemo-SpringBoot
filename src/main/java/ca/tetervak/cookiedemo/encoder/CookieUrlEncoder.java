@@ -3,7 +3,6 @@ package ca.tetervak.cookiedemo.encoder;
 
 import org.springframework.stereotype.Component;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
